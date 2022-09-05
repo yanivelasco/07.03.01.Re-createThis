@@ -27,13 +27,14 @@ img{
     --bordo--:hsl(357, 50%, 22%);
     --p--:hsl(357, 12%, 42%);;
     --feature--:hsl(357, 74%, 67%);
-    --darkBackground--:rgba(0, 0, 0, 0.1);
+    --darkBackground--:rgba(0, 0, 0, 0.2);
     --lightBackground--:rgba(255, 255, 255, 0.2);
 
 }
 
 body{
     font-family: 'ArialRounded';
+    color: var(--white--);
 }
 
 
@@ -131,4 +132,57 @@ ul{
     background: url(../images/user-white.png);
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right:5px;}
+    margin-right:5px;
+}
+
+.hero{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightBackground--);
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 45px;
+    padding-block: 25px;
+}
+
+.hero ul{
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.hero li{
+    margin: 10px;
+    margin-block: 0;
+}
+
+.pomodoro{
+    background-color: var(--darkBackground--);
+    border-radius: 4px;
+    padding: 8px;
+    padding-block: 5px;
+    font-weight: bolder;
+}
+
+h2{
+    font-size: 7em;
+    font-weight: bolder;
+    margin-block: 30px;
+}
+
+h3{
+    background-color: var(--white--);
+    border-radius: 4px;
+    padding-block: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: var(--maincolor--);
+    font-size: 1.4em;
+    border-bottom: solid rgb(235, 235, 235);
+    border-bottom-width: 6px;
+
+
+}
