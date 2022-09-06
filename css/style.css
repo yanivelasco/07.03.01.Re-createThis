@@ -93,7 +93,8 @@ ul{
     padding-right: 10px;
     font-style: normal;
     background-color: var(--lightBackground--);
-    border-radius: px;
+    border-radius: 4px;
+    opacity: 0.9;
     margin: 2%;
     font-size: .8em;
     align-items: center;
@@ -406,4 +407,86 @@ footer a{
     margin: 0px 7px;
     font-weight: bolder;
     font-size: .9em;
+}
+
+.links a{
+    color: hsl(357, 12%, 42%);
+}
+
+@media only screen and (max-width: 650px){
+    .menu1 span,
+    .menu2 span,
+    .menu3 span{
+        display: none;
+        padding: 8px;
+
+    }
+
+    .menu1::before,
+    .menu2::before,
+    .menu3::before{
+        margin-right: 0;
+
+    }
+
+    .mainmenu{
+        padding-right: 20px;
+    }
+    .firstpage h1{
+        margin-right: auto;
+        
+    }
+
+    .task::after{
+        margin-left: 400px;
+    }
+
+    .secondpage{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .secondpage h1{
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+    .secondpage h2{
+        font-size: 1.2em;
+    }
+
+    .secondpage p{
+        font-size: 1em;
+    }
+
+    .featureslist,
+    .pomodorotimerlist,
+    .downloadlist{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .hero{
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .hero h2{
+        font-size: 5em;
+    }
+
+    .hero ul{
+        font-size: .9em;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .task::after{
+        margin-left: 250px;
+    }
+
+    .add{
+        width: 330px;
+    }
 }
